@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="100%" height="100%">
+  <!-- Rounded square background: corner radius 25% (rx=50 on 200x200), deep plum #4A2C5A -->
+  <rect width="200" height="200" rx="50" ry="50" fill="#4A2C5A" />
+
+  <!-- Six-petal flower: alternating deeper rose-pink #E57AAB and medium lavender #A68BEA -->
+  <!-- Each petal is an ellipse, rx="24" ry="38", rotated 60 degrees apart around (100, 100) -->
+  <g id="flower-petals" class="flower-petals">
+    <!-- Petal 1: 0 deg (deeper rose-pink) -->
+    <ellipse cx="100" cy="62" rx="24" ry="38" fill="#E57AAB" transform="rotate(0 100 100)" />
+    
+    <!-- Petal 2: 60 deg (medium lavender) -->
+    <ellipse cx="100" cy="62" rx="24" ry="38" fill="#A68BEA" transform="rotate(60 100 100)" />
+    
+    <!-- Petal 3: 120 deg (deeper rose-pink) -->
+    <ellipse cx="100" cy="62" rx="24" ry="38" fill="#E57AAB" transform="rotate(120 100 100)" />
+    
+    <!-- Petal 4: 180 deg (medium lavender) -->
+    <ellipse cx="100" cy="62" rx="24" ry="38" fill="#A68BEA" transform="rotate(180 100 100)" />
+    
+    <!-- Petal 5: 240 deg (deeper rose-pink) -->
+    <ellipse cx="100" cy="62" rx="24" ry="38" fill="#E57AAB" transform="rotate(240 100 100)" />
+    
+    <!-- Petal 6: 300 deg (medium lavender) -->
+    <ellipse cx="100" cy="62" rx="24" ry="38" fill="#A68BEA" transform="rotate(300 100 100)" />
+  </g>
+
+  <!-- Golden coin: #F9C74F with #E0A526 outline and thin inner ring -->
+  <g id="coin">
+    <!-- Main coin disc -->
+    <circle cx="100" cy="100" r="30" fill="#F9C74F" stroke="#E0A526" stroke-width="3" />
+    
+    <!-- Thin inner ring -->
+    <circle cx="100" cy="100" r="24.5" fill="none" stroke="#E0A526" stroke-width="1.5" />
+    
+    <!-- Plum (#4A2C5A) ₹ symbol -->
+    <text x="100" y="101" 
+          font-family="'Poppins', 'Segoe UI', -apple-system, sans-serif" 
+          font-size="28" 
+          font-weight="700" 
+          fill="#4A2C5A" 
+          text-anchor="middle" 
+          dominant-baseline="central">₹</text>
+  </g>
+</svg>
